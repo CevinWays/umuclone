@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_action_home"
+        android:icon="@mipmap/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/bottom_action_riwayat"
+        android:icon="@mipmap/ic_riwayat"
+        android:title="Riwayat" />
+
+    <item
+        android:id="@+id/bottom_action_bayar"
+        android:icon="@mipmap/ic_bayar"
+        android:title="Bayar" />
+
+    <item
+        android:id="@+id/bottom_action_profile"
+        android:icon="@mipmap/ic_riwayat"
+        android:title="Profile" />
+</menu>
