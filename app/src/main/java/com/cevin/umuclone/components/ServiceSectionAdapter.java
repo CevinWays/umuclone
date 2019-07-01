@@ -13,12 +13,6 @@ import com.cevin.umuclone.R;
 
 public class ServiceSectionAdapter extends BaseAdapter {
     private Context context;
-
-//    private int[] dataGambar = {R.drawable.umu_welcome_satu,R.drawable.umu_welcome_satu,R.drawable.umu_welcome_satu,R.drawable.umu_welcome_satu,
-//            R.drawable.umu_welcome_satu,R.drawable.umu_welcome_satu,R.drawable.umu_welcome_satu,R.drawable.umu_welcome_satu,};
-//
-//    private String[] dataTitle = {"Alram", "Android", "Mobile", "Website", "Profile", "WordPress","Alram", "Android"};
-
     private final int[] dataGambar;
     private final String[] dataTitle;
 

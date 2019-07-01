@@ -17,8 +17,8 @@ import com.cevin.umuclone.components.ServiceSectionAdapter;
 public class HomeFragment extends Fragment {
     GridView gridView;
 
-    private int[] dataGambar = {R.drawable.umu_welcome_satu,R.drawable.umu_welcome_satu,R.drawable.umu_welcome_satu,R.drawable.umu_welcome_satu,
-            R.drawable.umu_welcome_satu,R.drawable.umu_welcome_satu,R.drawable.umu_welcome_satu,R.drawable.umu_welcome_satu,};
+    private int[] dataGambar = {R.mipmap.ic_donasi,R.mipmap.ic_spp,R.mipmap.ic_pulsa,R.mipmap.ic_telpon,
+            R.mipmap.ic_listrik,R.mipmap.ic_pdam,R.mipmap.ic_tabungan,R.mipmap.ic_all};
 
     private String[] dataTitle = {"Donasi", "Pem. SPP", "Pulsa", "Telepon", "Listrik", "PDAM","Tab. Pend", "Lihat Semua"};
 
