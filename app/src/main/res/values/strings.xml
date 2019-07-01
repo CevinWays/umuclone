@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UmuClone</string>
+    <string name="text_umu">UMU</string>
+    <string name="text_welcome_image">welcome_image</string>
+    <string name="text_welcome_heading">welcome_heading</string>
+    <string name="text_welcome_desc">welcome_desc</string>
+    <string name="text_get_started">Get Started</string>
+</resources>
