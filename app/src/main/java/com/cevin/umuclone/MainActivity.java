@@ -53,26 +53,22 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (menuItem.getItemId()) {
                     case R.id.bottom_action_home:
-//                        Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_SHORT).show();
                         replaceFragment(homeFragment, currentFragment);
                         return true;
                     case R.id.bottom_action_riwayat:
-//                        Toast.makeText(getApplicationContext(), "Riwayat", Toast.LENGTH_SHORT).show();
                         replaceFragment(riwayatFragment, currentFragment);
                         return true;
                     case R.id.bottom_action_bayar:
-//                        Toast.makeText(getApplicationContext(), "bayar", Toast.LENGTH_SHORT).show();
                         replaceFragment(bayarFragment, currentFragment);
                         return true;
                     case R.id.bottom_action_inbox:
                         replaceFragment(inboxFragment, currentFragment);
                         return true;
                     case R.id.bottom_action_profile:
-//                        Toast.makeText(getApplicationContext(), "profile", Toast.LENGTH_SHORT).show();
                         replaceFragment(profileFragment, currentFragment);
                         return true;
                     default:
-//                        Toast.makeText(getApplicationContext(), "Belum ada", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Belum ada", Toast.LENGTH_SHORT).show();
                         return false;
 
                 }

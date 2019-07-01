@@ -23,6 +23,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:elevation="@dimen/dimen_8dp"
         app:menu="@menu/bottom_menu"
         app:labelVisibilityMode="labeled"/>
 </android.support.constraint.ConstraintLayout>

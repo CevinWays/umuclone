@@ -21,8 +21,6 @@
         <activity android:name=".register.RegisterActivity" />
         <activity android:name=".login.LoginActivity" />
         <activity android:name=".MainActivity"/>
-        <activity android:name=".components.ServiceSection">
-        </activity>
 
     </application>
 
