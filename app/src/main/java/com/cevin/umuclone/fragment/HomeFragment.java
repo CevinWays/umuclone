@@ -20,7 +20,7 @@ public class HomeFragment extends Fragment {
     private int[] dataGambar = {R.drawable.umu_welcome_satu,R.drawable.umu_welcome_satu,R.drawable.umu_welcome_satu,R.drawable.umu_welcome_satu,
             R.drawable.umu_welcome_satu,R.drawable.umu_welcome_satu,R.drawable.umu_welcome_satu,R.drawable.umu_welcome_satu,};
 
-    private String[] dataTitle = {"Alram", "Android", "Mobile", "Website", "Profile", "WordPress","Alram", "Android"};
+    private String[] dataTitle = {"Donasi", "Pem. SPP", "Pulsa", "Telepon", "Listrik", "PDAM","Tab. Pend", "Lihat Semua"};
 
     public HomeFragment(){
 

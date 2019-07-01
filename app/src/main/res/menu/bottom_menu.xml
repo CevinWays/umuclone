@@ -16,7 +16,12 @@
         android:title="Bayar" />
 
     <item
+        android:id="@+id/bottom_action_inbox"
+        android:icon="@mipmap/ic_inbox"
+        android:title="Inbox" />
+
+    <item
         android:id="@+id/bottom_action_profile"
-        android:icon="@mipmap/ic_riwayat"
+        android:icon="@mipmap/ic_profile"
         android:title="Profile" />
 </menu>
