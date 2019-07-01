@@ -5,4 +5,14 @@
     <string name="text_welcome_heading">welcome_heading</string>
     <string name="text_welcome_desc">welcome_desc</string>
     <string name="text_get_started">Get Started</string>
+    <string name="text_lupa_password">Lupa Password?</string>
+    <string name="text_belum_punya_aku_daftar">Belum punya aku? Daftar</string>
+    <string name="text_ingat_saya">Ingat saya</string>
+    <string name="text_example_mail_com">example@mail.com</string>
+    <string name="text_login_an_account">Login an account</string>
+    <string name="text_login">Login</string>
+    <string name="text_hint_password">Password</string>
+    <string name="text_email">Email</string>
+    <string name="text_password">Password</string>
+    <string name="text_hint_example_mail_com">example@mail.com</string>
 </resources>
