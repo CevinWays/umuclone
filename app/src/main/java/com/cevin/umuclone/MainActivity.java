@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.cevin.umuclone.components.ServiceSectionAdapter;
 import com.cevin.umuclone.fragment.BayarFragment;
 import com.cevin.umuclone.fragment.HomeFragment;
+import com.cevin.umuclone.fragment.InboxFragment;
 import com.cevin.umuclone.fragment.ProfileFragment;
 import com.cevin.umuclone.fragment.RiwayatFragment;
 
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private RiwayatFragment riwayatFragment;
     private BayarFragment bayarFragment;
     private ProfileFragment profileFragment;
+    private InboxFragment inboxFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         riwayatFragment = new RiwayatFragment();
         bayarFragment = new BayarFragment();
         profileFragment = new ProfileFragment();
+        inboxFragment = new InboxFragment();
 
         initializeFragment();
 
@@ -61,6 +64,9 @@ public class MainActivity extends AppCompatActivity {
 //                        Toast.makeText(getApplicationContext(), "bayar", Toast.LENGTH_SHORT).show();
                         replaceFragment(bayarFragment, currentFragment);
                         return true;
+                    case R.id.bottom_action_inbox:
+                        replaceFragment(inboxFragment, currentFragment);
+                        return true;
                     case R.id.bottom_action_profile:
 //                        Toast.makeText(getApplicationContext(), "profile", Toast.LENGTH_SHORT).show();
                         replaceFragment(profileFragment, currentFragment);
@@ -80,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
             fragmentTransaction.hide(riwayatFragment);
             fragmentTransaction.hide(bayarFragment);
+            fragmentTransaction.hide(inboxFragment);
             fragmentTransaction.hide(profileFragment);
 
         }
@@ -87,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
 
             fragmentTransaction.hide(homeFragment);
             fragmentTransaction.hide(bayarFragment);
+            fragmentTransaction.hide(inboxFragment);
             fragmentTransaction.hide(profileFragment);
 
         }
@@ -94,6 +102,15 @@ public class MainActivity extends AppCompatActivity {
 
             fragmentTransaction.hide(homeFragment);
             fragmentTransaction.hide(riwayatFragment);
+            fragmentTransaction.hide(inboxFragment);
+            fragmentTransaction.hide(profileFragment);
+
+        }
+        if(fragment == inboxFragment){
+
+            fragmentTransaction.hide(homeFragment);
+            fragmentTransaction.hide(riwayatFragment);
+            fragmentTransaction.hide(bayarFragment);
             fragmentTransaction.hide(profileFragment);
 
         }
@@ -101,6 +118,7 @@ public class MainActivity extends AppCompatActivity {
 
             fragmentTransaction.hide(homeFragment);
             fragmentTransaction.hide(riwayatFragment);
+            fragmentTransaction.hide(inboxFragment);
             fragmentTransaction.hide(bayarFragment);
 
         }
@@ -116,10 +134,12 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.add(R.id.main_container, riwayatFragment);
         fragmentTransaction.add(R.id.main_container, bayarFragment);
         fragmentTransaction.add(R.id.main_container, profileFragment);
+        fragmentTransaction.add(R.id.main_container, inboxFragment);
 
         fragmentTransaction.hide(riwayatFragment);
         fragmentTransaction.hide(bayarFragment);
         fragmentTransaction.hide(profileFragment);
+        fragmentTransaction.hide(inboxFragment);
 
         fragmentTransaction.commit();
     }
