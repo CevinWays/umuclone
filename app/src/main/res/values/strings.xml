@@ -15,4 +15,10 @@
     <string name="text_email">Email</string>
     <string name="text_password">Password</string>
     <string name="text_hint_example_mail_com">example@mail.com</string>
+    <string name="text_register_an_account">Register an account</string>
+    <string name="text_register">REGISTER</string>
+    <string name="text_sudah_punya_akun_masuk">Sudah punya akun? Masuk</string>
+    <string name="text_hint_jhonlenon">JhonLenon</string>
+    <string name="text_username">Username</string>
+    <string name="text_highlight">Highlight</string>
 </resources>
