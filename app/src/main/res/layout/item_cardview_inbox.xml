@@ -23,29 +23,33 @@
 
         <TextView
             android:id="@+id/textView_title_inbox_umu"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="@dimen/dimen_8dp"
-            android:text="Bokek ini?, Cek Promo UMU yuk!"
+            android:layout_marginEnd="8dp"
             android:maxLength="200"
             android:maxLines="1"
+            android:text="Bokek ini?, Cek Promo UMU yuk!"
             android:textColor="@android:color/black"
             android:textSize="16sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/imageView_inbox_umu"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView_desc_inbox_umu"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:maxLength="200"
             android:maxLines="1"
             android:text="Ada promo UMU nih, yuk cek sebelum"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/imageView_inbox_umu"
             app:layout_constraintTop_toBottomOf="@id/textView_title_inbox_umu" />
 

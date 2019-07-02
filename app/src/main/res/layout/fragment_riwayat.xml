@@ -10,15 +10,16 @@
         android:id="@+id/toolbar_riwayat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        layout="@layout/component_toolbar_umu"/>
+        layout="@layout/component_toolbar"/>
 
-    <ListView
-        android:id="@+id/listView_riwayat"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView_riwayat"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:clickable="true"
         android:focusable="true"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_riwayat"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 </android.support.constraint.ConstraintLayout>
