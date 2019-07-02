@@ -1,4 +1,4 @@
-package com.cevin.umuclone.fragment;
+package com.cevin.umuclone.bayar;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;

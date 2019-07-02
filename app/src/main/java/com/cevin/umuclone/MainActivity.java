@@ -7,17 +7,13 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.GridView;
 import android.widget.Toast;
 
-import com.cevin.umuclone.components.ServiceSectionAdapter;
-import com.cevin.umuclone.fragment.BayarFragment;
-import com.cevin.umuclone.fragment.HomeFragment;
-import com.cevin.umuclone.fragment.InboxFragment;
-import com.cevin.umuclone.fragment.ProfileFragment;
-import com.cevin.umuclone.fragment.RiwayatFragment;
+import com.cevin.umuclone.bayar.BayarFragment;
+import com.cevin.umuclone.home.HomeFragment;
+import com.cevin.umuclone.inbox.InboxFragment;
+import com.cevin.umuclone.profile.ProfileFragment;
+import com.cevin.umuclone.riwayat.RiwayatFragment;
 
 public class MainActivity extends AppCompatActivity {
 
