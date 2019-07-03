@@ -1,4 +1,4 @@
-package com.cevin.umuclone;
+package com.cevin.umuclone.components;
 
 import android.view.View;
 

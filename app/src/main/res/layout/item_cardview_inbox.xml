@@ -16,7 +16,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/imageView_inbox_umu"
+            android:id="@+id/imageView_point_umu"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="@dimen/dimen_8dp"
@@ -41,7 +41,7 @@
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/imageView_inbox_umu"
+            app:layout_constraintStart_toEndOf="@id/imageView_point_umu"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -56,7 +56,7 @@
             android:text="Ada promo UMU nih, yuk cek sebelum"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/imageView_inbox_umu"
+            app:layout_constraintStart_toEndOf="@id/imageView_point_umu"
             app:layout_constraintTop_toBottomOf="@id/textView_title_inbox_umu" />
 
     </android.support.constraint.ConstraintLayout>

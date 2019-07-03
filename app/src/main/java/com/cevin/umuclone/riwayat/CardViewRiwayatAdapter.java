@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.cevin.umuclone.CustomOnItemClickListener;
+import com.cevin.umuclone.components.CustomOnItemClickListener;
 import com.cevin.umuclone.R;
 import com.cevin.umuclone.riwayat.model.ModelRiwayat;
 
