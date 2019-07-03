@@ -17,12 +17,10 @@
 
         <ImageView
             android:id="@+id/imageView_point_umu"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="@dimen/dimen_8dp"
-            android:layout_marginTop="@dimen/dimen_8dp"
-            android:layout_marginBottom="8dp"
-            android:src="@mipmap/ic_point_color"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/backround_gradient_umu"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -31,8 +29,7 @@
             android:id="@+id/textView_title_inbox_umu"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:maxLength="200"
             android:maxLines="1"
@@ -48,16 +45,30 @@
             android:id="@+id/textView_desc_inbox_umu"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
             android:maxLength="200"
             android:maxLines="1"
             android:text="Ada promo UMU nih, yuk cek sebelum"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/imageView_point_umu"
             app:layout_constraintTop_toBottomOf="@id/textView_title_inbox_umu" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Use Now"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_desc_inbox_umu" />
 
     </android.support.constraint.ConstraintLayout>
 

@@ -6,14 +6,14 @@ import java.util.ArrayList;
 
 public class PointData {
     public static String[][] dataInbox = new String[][]{
-            {"Reward Point 1","Redeem Untuk Menggunakan"},
-            {"Reward Point 2","Redeem Untuk Menggunakan"},
-            {"Reward Point 3","Redeem Untuk Menggunakan"},
-            {"Reward Point 4","Redeem Untuk Menggunakan"},
-            {"Reward Point 5","Redeem Untuk Menggunakan"},
-            {"Reward Point 6","Redeem Untuk Menggunakan"},
-            {"Reward Point 7","Redeem Untuk Menggunakan"},
-            {"Reward Point 8","Redeem Untuk Menggunakan"},
+            {"Reward Point 1","Valid until 21 Jul 2019"},
+            {"Reward Point 2","Valid until 18 Okt 2019"},
+            {"Reward Point 3","Valid until 12 Jul 2019"},
+            {"Reward Point 4","Valid until 09 Jul 2019"},
+            {"Reward Point 5","Valid until 21 Jun 2019"},
+            {"Reward Point 6","Valid until 01 Jul 2019"},
+            {"Reward Point 7","Valid until 02 Jan 2019"},
+            {"Reward Point 8","Valid until 28 Jul 2019"},
 
     };
 
