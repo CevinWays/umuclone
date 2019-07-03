@@ -33,7 +33,7 @@
         android:layout_height="35dp"
         android:layout_marginEnd="@dimen/dimen_16dp"
         android:scaleType="centerCrop"
-        android:src="@mipmap/ic_mail"
+        android:src="@mipmap/ic_inbox_color"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="@+id/imageView_avatar"
         app:layout_constraintEnd_toEndOf="parent"

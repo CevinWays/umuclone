@@ -76,14 +76,14 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
             currentPage = position;
 
             if (currentPage == 0){
-                buttonGetStarted.setEnabled(false);
-                buttonGetStarted.setVisibility(View.INVISIBLE);
+                buttonGetStarted.setEnabled(true);
+                buttonGetStarted.setVisibility(View.VISIBLE);
             }else if (currentPage == 2){
                 buttonGetStarted.setEnabled(true);
                 buttonGetStarted.setVisibility(View.VISIBLE);
             }else{
-                buttonGetStarted.setEnabled(false);
-                buttonGetStarted.setVisibility(View.INVISIBLE);
+                buttonGetStarted.setEnabled(true);
+                buttonGetStarted.setVisibility(View.VISIBLE);
             }
         }
 

@@ -6,12 +6,29 @@
     tools:context=".welcome.WelcomeActivity"
     android:background="@android:color/white">
 
+    <TextView
+        android:id="@+id/textView_title_umu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_umu"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dimen_16dp"/>
+
     <android.support.v4.view.ViewPager
         android:id="@+id/slideViewPager"
         android:layout_width="match_parent"
         android:layout_height="469dp"
+        android:layout_above="@+id/button_getStarted"
+        android:layout_below="@+id/textView_title_umu"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"/>
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="32dp" />
 
     <LinearLayout
         android:id="@+id/dotsLayout"
@@ -23,17 +40,18 @@
 
     <Button
         android:id="@+id/button_getStarted"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/dotsLayout"
-        android:layout_centerHorizontal="true"
         android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:background="@color/colorAccent"
+        android:background="@drawable/button_umu_primary_style"
         android:padding="15dp"
         android:text="@string/text_get_started"
         android:textColor="@android:color/white"
-        android:visibility="invisible" />
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_16dp"/>
 
 
 </RelativeLayout>
