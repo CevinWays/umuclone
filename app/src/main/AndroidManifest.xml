@@ -11,17 +11,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".welcome.WelcomeActivity"/>
+        <activity android:name=".wallet.WalletActivity"></activity>
+        <activity android:name=".deals.DealsActivity" />
+        <activity android:name=".topup.TopupActivity" />
+        <activity android:name=".transfer.TransferActivity" />
+        <activity android:name=".inbox.InboxActivity" />
+        <activity android:name=".welcome.WelcomeActivity" />
         <activity android:name=".splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".register.RegisterActivity" />
         <activity android:name=".login.LoginActivity" />
-        <activity android:name=".MainActivity"/>
-
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

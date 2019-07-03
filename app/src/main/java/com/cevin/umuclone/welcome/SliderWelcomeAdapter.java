@@ -22,9 +22,9 @@ public class SliderWelcomeAdapter extends PagerAdapter {
     }
 
     private int[] slide_images = {
-            R.drawable.umu_welcome_satu,
-            R.drawable.umu_welcome_dua,
-            R.drawable.umu_welcome_tiga,
+            R.mipmap.slide1,
+            R.mipmap.slide2,
+            R.mipmap.slide3,
     };
 
     private String[] slide_headings = {

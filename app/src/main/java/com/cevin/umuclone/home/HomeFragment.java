@@ -1,5 +1,6 @@
 package com.cevin.umuclone.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -14,6 +15,11 @@ import android.widget.Toast;
 
 import com.cevin.umuclone.R;
 import com.cevin.umuclone.components.ServiceSectionAdapter;
+import com.cevin.umuclone.deals.DealsActivity;
+import com.cevin.umuclone.inbox.InboxActivity;
+import com.cevin.umuclone.topup.TopupActivity;
+import com.cevin.umuclone.transfer.TransferActivity;
+import com.cevin.umuclone.wallet.WalletActivity;
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
     private GridView gridView;
@@ -60,21 +66,27 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+        Intent intent;
         switch (v.getId()){
             case R.id.imageView_inbox_notif:
-                Toast.makeText(getContext(), "Ke detail inbox",Toast.LENGTH_SHORT).show();
+                intent = new Intent(getContext(), InboxActivity.class);
+                startActivity(intent);
                 break;
             case R.id.imageView_dep_1:
-                Toast.makeText(getContext(), "Ke detail transfer",Toast.LENGTH_SHORT).show();
+                intent = new Intent(getContext(), TransferActivity.class);
+                startActivity(intent);
                 break;
             case R.id.imageView_dep_2:
-                Toast.makeText(getContext(), "Ke detail top up",Toast.LENGTH_SHORT).show();
+                intent = new Intent(getContext(), TopupActivity.class);
+                startActivity(intent);
                 break;
             case R.id.imageView_dep_3:
-                Toast.makeText(getContext(), "Ke detail deals",Toast.LENGTH_SHORT).show();
+                intent = new Intent(getContext(), DealsActivity.class);
+                startActivity(intent);
                 break;
             case R.id.imageView_next:
-                Toast.makeText(getContext(), "Ke detail wallet",Toast.LENGTH_SHORT).show();
+                intent = new Intent(getContext(), WalletActivity.class);
+                startActivity(intent);
                 break;
         }
     }
