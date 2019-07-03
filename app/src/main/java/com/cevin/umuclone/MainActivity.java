@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.cevin.umuclone.bayar.BayarFragment;
 import com.cevin.umuclone.home.HomeFragment;
-import com.cevin.umuclone.inbox.InboxFragment;
+import com.cevin.umuclone.point.PointFragment;
 import com.cevin.umuclone.profile.ProfileFragment;
 import com.cevin.umuclone.riwayat.RiwayatFragment;
 
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private RiwayatFragment riwayatFragment;
     private BayarFragment bayarFragment;
     private ProfileFragment profileFragment;
-    private InboxFragment inboxFragment;
+    private PointFragment pointFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         riwayatFragment = new RiwayatFragment();
         bayarFragment = new BayarFragment();
         profileFragment = new ProfileFragment();
-        inboxFragment = new InboxFragment();
+        pointFragment = new PointFragment();
 
         initializeFragment();
 
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                         replaceFragment(bayarFragment, currentFragment);
                         return true;
                     case R.id.bottom_action_inbox:
-                        replaceFragment(inboxFragment, currentFragment);
+                        replaceFragment(pointFragment, currentFragment);
                         return true;
                     case R.id.bottom_action_profile:
                         replaceFragment(profileFragment, currentFragment);
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
             fragmentTransaction.hide(riwayatFragment);
             fragmentTransaction.hide(bayarFragment);
-            fragmentTransaction.hide(inboxFragment);
+            fragmentTransaction.hide(pointFragment);
             fragmentTransaction.hide(profileFragment);
 
         }
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
             fragmentTransaction.hide(homeFragment);
             fragmentTransaction.hide(bayarFragment);
-            fragmentTransaction.hide(inboxFragment);
+            fragmentTransaction.hide(pointFragment);
             fragmentTransaction.hide(profileFragment);
 
         }
@@ -94,11 +94,11 @@ public class MainActivity extends AppCompatActivity {
 
             fragmentTransaction.hide(homeFragment);
             fragmentTransaction.hide(riwayatFragment);
-            fragmentTransaction.hide(inboxFragment);
+            fragmentTransaction.hide(pointFragment);
             fragmentTransaction.hide(profileFragment);
 
         }
-        if(fragment == inboxFragment){
+        if(fragment == pointFragment){
 
             fragmentTransaction.hide(homeFragment);
             fragmentTransaction.hide(riwayatFragment);
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
 
             fragmentTransaction.hide(homeFragment);
             fragmentTransaction.hide(riwayatFragment);
-            fragmentTransaction.hide(inboxFragment);
+            fragmentTransaction.hide(pointFragment);
             fragmentTransaction.hide(bayarFragment);
 
         }
@@ -126,12 +126,12 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.add(R.id.main_container, riwayatFragment);
         fragmentTransaction.add(R.id.main_container, bayarFragment);
         fragmentTransaction.add(R.id.main_container, profileFragment);
-        fragmentTransaction.add(R.id.main_container, inboxFragment);
+        fragmentTransaction.add(R.id.main_container, pointFragment);
 
         fragmentTransaction.hide(riwayatFragment);
         fragmentTransaction.hide(bayarFragment);
         fragmentTransaction.hide(profileFragment);
-        fragmentTransaction.hide(inboxFragment);
+        fragmentTransaction.hide(pointFragment);
 
         fragmentTransaction.commit();
     }

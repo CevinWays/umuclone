@@ -2,12 +2,15 @@ package com.cevin.umuclone.riwayat;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.cevin.umuclone.CustomOnItemClickListener;
 import com.cevin.umuclone.R;
 import com.cevin.umuclone.riwayat.model.ModelRiwayat;
 
@@ -43,6 +46,13 @@ public class CardViewRiwayatAdapter extends RecyclerView.Adapter<CardViewRiwayat
 
         cardViewViewHolder.textViewTotal.setText(m.getRiwayatTotal());
         cardViewViewHolder.textViewDesc.setText(m.getRiwayatDesc());
+
+        cardViewViewHolder.cardViewRiwayat.setOnClickListener(new CustomOnItemClickListener(i, new CustomOnItemClickListener.OnItemClickCallback() {
+            @Override
+            public void onItemClicked(View view, int position) {
+                Toast.makeText(context, "Menuju "+ getListRiwayat().get(position).getRiwayatTotal(), Toast.LENGTH_SHORT).show();
+            }
+        }));
     }
 
     @Override
@@ -54,12 +64,15 @@ public class CardViewRiwayatAdapter extends RecyclerView.Adapter<CardViewRiwayat
 
         TextView textViewTotal;
         TextView textViewDesc;
+        CardView cardViewRiwayat;
 
         public CardViewViewHolder(@NonNull View itemView) {
             super(itemView);
 
             textViewTotal = itemView.findViewById(R.id.textView_total_riwayat);
             textViewDesc = itemView.findViewById(R.id.textView_desc_riwayat);
+            cardViewRiwayat = itemView.findViewById(R.id.cardView_riwayat);
+
         }
     }
 }

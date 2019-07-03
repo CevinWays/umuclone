@@ -17,8 +17,8 @@
 
     <item
         android:id="@+id/bottom_action_inbox"
-        android:icon="@mipmap/ic_inbox"
-        android:title="Inbox" />
+        android:icon="@mipmap/ic_point"
+        android:title="Points" />
 
     <item
         android:id="@+id/bottom_action_profile"

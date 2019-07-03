@@ -1,4 +1,4 @@
-package com.cevin.umuclone.inbox;
+package com.cevin.umuclone.point;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -13,17 +13,17 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.cevin.umuclone.R;
-import com.cevin.umuclone.inbox.model.ModelInbox;
+import com.cevin.umuclone.point.model.ModelPoint;
 
 import java.util.ArrayList;
 
-public class InboxFragment extends Fragment {
+public class PointFragment extends Fragment {
 
     TextView textViewToolbar;
     private RecyclerView recyclerViewInbox;
-    private ArrayList<ModelInbox> list = new ArrayList<>();
+    private ArrayList<ModelPoint> list = new ArrayList<>();
 
-    public InboxFragment(){
+    public PointFragment(){
 
     }
 
@@ -35,9 +35,9 @@ public class InboxFragment extends Fragment {
         textViewToolbar = view.findViewById(R.id.textView_toolbar);
         recyclerViewInbox = view.findViewById(R.id.recycleView_inbox);
 
-        textViewToolbar.setText("Inbox");
+        textViewToolbar.setText("Points");
 
-        list.addAll(InboxData.getListData());
+        list.addAll(PointData.getListData());
         showRecycleCardView();
 
         Log.d("inboxfrag", String.valueOf(list));
@@ -47,9 +47,9 @@ public class InboxFragment extends Fragment {
 
     private void showRecycleCardView() {
         recyclerViewInbox.setLayoutManager(new LinearLayoutManager(this.getContext()));
-        CardViewInboxAdapter cardViewInboxAdapter = new CardViewInboxAdapter(this.getContext());
-        cardViewInboxAdapter.setListInbox(list);
-        recyclerViewInbox.setAdapter(cardViewInboxAdapter);
+        CardViewPointAdapter cardViewPointAdapter = new CardViewPointAdapter(this.getContext());
+        cardViewPointAdapter.setListInbox(list);
+        recyclerViewInbox.setAdapter(cardViewPointAdapter);
 
     }
 }

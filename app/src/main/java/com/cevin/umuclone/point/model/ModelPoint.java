@@ -1,8 +1,6 @@
-package com.cevin.umuclone.inbox.model;
+package com.cevin.umuclone.point.model;
 
-import android.os.Parcelable;
-
-public class ModelInbox{
+public class ModelPoint {
 
     private String messageTitle,messageDesc;
 
